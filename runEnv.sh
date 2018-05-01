@@ -1,0 +1,1 @@
+docker run -ti -p 127.0.0.1:4567:4567 -v $PWD:/project  holman/carnd-cpp bash

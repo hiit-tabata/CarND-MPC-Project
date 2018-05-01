@@ -1,7 +1,27 @@
 # CarND-Controls-MPC
 Self-Driving Car Engineer Nanodegree Program
 
+## Start the program
+Since there are some dependency problem, I used dokcer to sovle the issue.
+#### start build
+``` bash
+docker run -p 127.0.0.1:4567:4567 -v $PWD:/project  holman/carnd-cpp /project/build/mpc
+```
+#### start interactive bash
+``` bash
+docker run -ti -p 127.0.0.1:4567:4567 -v $PWD:/project  holman/carnd-cpp bash
+```
+
+#### The Model
+
+#### Timestep Length and Elapsed Duration (N & dt)
+
+#### Polynomial Fitting and MPC Preprocessing
+
+#### Model Predictive Control with Latency
+
 ---
+## Original README 
 
 ## Dependencies
 

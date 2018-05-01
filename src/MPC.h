@@ -1,3 +1,4 @@
+
 #ifndef MPC_H
 #define MPC_H
 
@@ -11,6 +12,9 @@ class MPC {
   MPC();
 
   virtual ~MPC();
+
+  //Predic the next state before hand to incorporate latency in actuator commands in the model
+  std::vector<double> PredictNextState(std::vector<double> state, std::vector<double> actuations, double latency);
 
   // Solve the model given an initial state and polynomial coefficients.
   // Return the first actuatotions.
